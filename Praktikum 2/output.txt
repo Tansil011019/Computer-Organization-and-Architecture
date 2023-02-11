@@ -1,0 +1,92 @@
+0x565569e9 <+0>:     endbr32
+   0x565569ed <+4>:     push   %ebp
+   0x565569ee <+5>:     push   %edi
+   0x565569ef <+6>:     push   %esi
+   0x565569f0 <+7>:     push   %ebx
+   0x565569f1 <+8>:     sub    $0x64,%esp
+   0x565569f4 <+11>:    call   0x565563f0 <__x86.get_pc_thunk.bx>
+   0x565569f9 <+16>:    add    $0x5567,%ebx
+   0x565569ff <+22>:    mov    %gs:0x14,%eax
+   0x56556a05 <+28>:    mov    %eax,0x54(%esp)
+   0x56556a09 <+32>:    xor    %eax,%eax
+   0x56556a0b <+34>:    lea    0x24(%esp),%eax
+   0x56556a0f <+38>:    push   %eax
+   0x56556a10 <+39>:    pushl  0x7c(%esp)
+   0x56556a14 <+43>:    call   0x565571bb <read_six_numbers>
+   0x56556a19 <+48>:    lea    0x30(%esp),%ebp
+   0x56556a1d <+52>:    add    $0x10,%esp
+   0x56556a20 <+55>:    movl   $0x0,0xc(%esp)
+   0x56556a28 <+63>:    lea    0x34(%esp),%eax
+   0x56556a2c <+67>:    mov    %eax,0x8(%esp)
+   0x56556a30 <+71>:    jmp    0x56556a53 <Green_Necromancer+106>
+   0x56556a32 <+73>:    call   0x565570d3 <illegal_move>
+   0x56556a37 <+78>:    jmp    0x56556a60 <Green_Necromancer+119>
+   0x56556a39 <+80>:    add    $0x4,%esi
+   0x56556a3c <+83>:    cmp    %esi,0x8(%esp)
+   0x56556a40 <+87>:    je     0x56556a50 <Green_Necromancer+103>
+   0x56556a42 <+89>:    mov    (%esi),%eax
+   0x56556a44 <+91>:    cmp    %eax,-0x4(%edi)
+   0x56556a47 <+94>:    jne    0x56556a39 <Green_Necromancer+80>
+   0x56556a49 <+96>:    call   0x565570d3 <illegal_move>
+   0x56556a4e <+101>:   jmp    0x56556a39 <Green_Necromancer+80>
+   0x56556a50 <+103>:   add    $0x4,%ebp
+   0x56556a53 <+106>:   mov    %ebp,%edi
+   0x56556a55 <+108>:   mov    -0x4(%ebp),%eax
+   0x56556a58 <+111>:   sub    $0x1,%eax
+=> 0x56556a5b <+114>:   cmp    $0x5,%eax
+   0x56556a5e <+117>:   ja     0x56556a32 <Green_Necromancer+73>
+   0x56556a60 <+119>:   addl   $0x1,0xc(%esp)
+   0x56556a65 <+124>:   mov    0xc(%esp),%eax
+   0x56556a69 <+128>:   cmp    $0x5,%eax
+   0x56556a6c <+131>:   jg     0x56556a72 <Green_Necromancer+137>
+   0x56556a6e <+133>:   mov    %ebp,%esi
+   0x56556a70 <+135>:   jmp    0x56556a42 <Green_Necromancer+89>
+   0x56556a72 <+137>:   mov    $0x0,%esi
+   0x56556a77 <+142>:   mov    %esi,%edi
+   0x56556a79 <+144>:   mov    0x1c(%esp,%esi,4),%ecx
+   0x56556a7d <+148>:   mov    $0x1,%eax
+--Type <RET> for more, q to quit, c to continue without paging--
+   0x56556a82 <+153>:   lea    0x598(%ebx),%edx
+   0x56556a88 <+159>:   cmp    $0x1,%ecx
+   0x56556a8b <+162>:   jle    0x56556a97 <Green_Necromancer+174>
+   0x56556a8d <+164>:   mov    0x8(%edx),%edx
+   0x56556a90 <+167>:   add    $0x1,%eax
+   0x56556a93 <+170>:   cmp    %ecx,%eax
+   0x56556a95 <+172>:   jne    0x56556a8d <Green_Necromancer+164>
+   0x56556a97 <+174>:   mov    %edx,0x34(%esp,%edi,4)
+   0x56556a9b <+178>:   add    $0x1,%esi
+   0x56556a9e <+181>:   cmp    $0x6,%esi
+   0x56556aa1 <+184>:   jne    0x56556a77 <Green_Necromancer+142>
+   0x56556aa3 <+186>:   mov    0x34(%esp),%esi
+   0x56556aa7 <+190>:   mov    0x38(%esp),%eax
+   0x56556aab <+194>:   mov    %eax,0x8(%esi)
+   0x56556aae <+197>:   mov    0x3c(%esp),%edx
+   0x56556ab2 <+201>:   mov    %edx,0x8(%eax)
+   0x56556ab5 <+204>:   mov    0x40(%esp),%eax
+   0x56556ab9 <+208>:   mov    %eax,0x8(%edx)
+   0x56556abc <+211>:   mov    0x44(%esp),%edx
+   0x56556ac0 <+215>:   mov    %edx,0x8(%eax)
+   0x56556ac3 <+218>:   mov    0x48(%esp),%eax
+   0x56556ac7 <+222>:   mov    %eax,0x8(%edx)
+   0x56556aca <+225>:   movl   $0x0,0x8(%eax)
+   0x56556ad1 <+232>:   mov    $0x5,%edi
+   0x56556ad6 <+237>:   jmp    0x56556ae0 <Green_Necromancer+247>
+   0x56556ad8 <+239>:   mov    0x8(%esi),%esi
+   0x56556adb <+242>:   sub    $0x1,%edi
+   0x56556ade <+245>:   je     0x56556af0 <Green_Necromancer+263>
+   0x56556ae0 <+247>:   mov    0x8(%esi),%eax
+   0x56556ae3 <+250>:   mov    (%eax),%eax
+   0x56556ae5 <+252>:   cmp    %eax,(%esi)
+   0x56556ae7 <+254>:   jle    0x56556ad8 <Green_Necromancer+239>
+   0x56556ae9 <+256>:   call   0x565570d3 <illegal_move>
+   0x56556aee <+261>:   jmp    0x56556ad8 <Green_Necromancer+239>
+   0x56556af0 <+263>:   mov    0x4c(%esp),%eax
+   0x56556af4 <+267>:   xor    %gs:0x14,%eax
+   0x56556afb <+274>:   jne    0x56556b05 <Green_Necromancer+284>
+   0x56556afd <+276>:   add    $0x5c,%esp
+   0x56556b00 <+279>:   pop    %ebx
+   0x56556b01 <+280>:   pop    %esi
+   0x56556b02 <+281>:   pop    %edi
+   0x56556b03 <+282>:   pop    %ebp
+   0x56556b04 <+283>:   ret
+   0x56556b05 <+284>:   call   0x565580a0 <__stack_chk_fail_local>
